@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GoogleFontsここから -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+    <!-- GoogleFontsここまで -->
+    <!-- FontAwsomeここから -->
+    <script src="https://kit.fontawesome.com/7ba2902154.js" crossorigin="anonymous"></script>
+    <!-- FontAwsomeここまで -->
+<!-- CSSここから -->
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/option.css">
+<!-- CSSここまで -->
+</head>
+<body>
+    <div class="side-bar">
+        <nav>
+            <ul>
+                <li class="blue-square menu">Menu</li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="top.html" class="button" >
+                                トップ
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="schedule.html" class="button suke" >
+                                スケジュール
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="message.html" class="button" >
+                                メッセージ
+                        </a>
+                    </div>
+                </li>
+                <li>            
+                    <div class="button-shadow">
+                        <a href="board.html" class="button" >
+                                掲示板
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="notice.html" class="button" >
+                                通知
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="group.html" class="button" >
+                                グループ
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="option.html" class="button" >
+                                設定
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <p class="bottom">現在時刻12:32</p>
+    </div>
+    <div class="main-bar">
+        <div class="head-bar">
+            <ul>
+                <li>
+                    <a href="notice.html">
+                        <i class="fa-solid fa-bell"></i>通知
+                    </a>
+                </li>
+                <li><i class="fa-solid fa-user"></i>ようこそ○○さん</li>
+                <li>
+                    <button>
+                        ログアウト<i class="fa-solid fa-right-from-bracket"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Option<span>設定</span></h1>
+            <div class="optionlist blue-square white-border">
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    <p>ユーザー名：<input type="text" name="user-name" placeholder="現在設定中の名前"></p>
+                    <p>メールアドレス：<input type="text" name="mail" placeholder="現在設定中のアドレス"></p>
+                    <div class="option-profileimg">
+                        <p>プロフィール画像：<input type="file" name="profile-image" id=""></p>
+                        <img src="image/Vector.png" alt="Pプロフィール画像">
+                    </div>
+                    <div class="button-shadow">
+                        <button type="submit" class="button">変更を保存</button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

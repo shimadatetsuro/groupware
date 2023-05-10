@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.option-profileimg{
+    display: flex;
+    align-items: center;
+}
+.optionlist{
+    padding: 20px;
+}
+.optionlist form > * {
+    margin-bottom: 20px;
+}

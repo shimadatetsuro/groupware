@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* ここからスケジュール作成 */
+.massage-main-create{
+    width: 100%;
+    min-height: 440px;
+    height: 80vh;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.schedule-create-period{
+    display: flex;
+    align-items: center;
+}
+.schedule-create-period-start,
+.schedule-create-period-end{
+    display: flex;
+}
+.message-create {
+    display: flex;
+    flex-flow: column;
+}
+.message-create > * {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #fff;
+}
+.mesage-create-text{
+    display: flex;
+    justify-content: flex-start;
+}
+.mesage-create-text textarea {
+    width: 580px;
+    height: 200px;
+}
+.address-to {
+    border-bottom: none;
+}
+.edit-address{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.edit-address select {
+    width: 170px;
+    height: 180px;
+    font-size: 1rem;
+}
+select.group-members {
+    margin-top: 37px;
+}
+.edit-address-memberlist{
+    display: flex;
+    flex-flow: column;
+}
+.message-create .button {
+    width: 5rem;
+}
+.submit-cancel {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: none;
+}
+.submit-cancel a,
+.submit-cancel button {
+    margin: 0.3rem;
+    width: 8rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+}

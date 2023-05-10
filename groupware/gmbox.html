@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GoogleFontsここから -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+    <!-- GoogleFontsここまで -->
+    <!-- FontAwsomeここから -->
+    <script src="https://kit.fontawesome.com/7ba2902154.js" crossorigin="anonymous"></script>
+    <!-- FontAwsomeここまで -->
+<!-- CSSここから -->
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/message.css">
+<!-- CSSここまで -->
+</head>
+<body>
+    <div class="side-bar">
+        <nav>
+            <ul>
+                <li class="blue-square menu">Menu</li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="top.html" class="button" >
+                                トップ
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="schedule.html" class="button suke" >
+                                スケジュール
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="message.html" class="button" >
+                                メッセージ
+                        </a>
+                    </div>
+                </li>
+                <li>            
+                    <div class="button-shadow">
+                        <a href="board.html" class="button" >
+                                掲示板
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="notice.html" class="button" >
+                                通知
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="#" class="button" >
+                                グループ
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="#" class="button" >
+                                設定
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <p class="bottom">現在時刻12:32</p>
+    </div>
+    <div class="main-bar">
+        <div class="head-bar">
+            <ul>
+                <li>
+                    <a href="notice.html">
+                        <i class="fa-solid fa-bell"></i>通知
+                    </a>
+                </li>
+                <li><i class="fa-solid fa-user"></i>ようこそ○○さん</li>
+                <li>
+                    <form action="login.html">
+                        <button>
+                            ログアウト<i class="fa-solid fa-right-from-bracket"></i>
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Message<span>メッセージ</span></h1>
+            <div class="content-message">
+                <div class="message-menu blue-square white-border">
+                    <ul>
+                        <li>
+                            <div class="button-shadow">
+                                <a href="message.html" class="button" >
+                                        受信箱
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="button-shadow">
+                                <a href="message-sendbox.html" class="button" >
+                                        送信箱
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="button-shadow">
+                                <a href="#" class="button" >
+                                        下書き
+                                </a>
+                            </div>
+                        </li>
+                        <li>            
+                            <div class="button-shadow">
+                                <a href="gmbox.html" class="button" >
+                                        運営
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="button-shadow">
+                                <a href="trashbox.html" class="button" >
+                                        ゴミ箱
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="button-shadow">
+                                <a href="message-create.html" class="button suke" >
+                                        メッセージ作成
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="message-main">
+                    <input type="checkbox" onclick="checkAll(this)">すべて選択
+                    <form action="">
+                            <div class="message-command">
+                                <span>チェックした項目を</span>
+                                <button type="submit" name="delete-message" class="blue-square">削除する</button>
+                            </div>
+                            <div class="message-list blue-square white-border">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" value="1" >
+                                        <div class="user-img-name">
+                                            <img src="image/Vector.png" alt="ユーザー画像">
+                                            <span>ユーザー１</span>
+                                        </div>
+                                        <div class="message-title-text">
+                                            <a href="" class="message-title">件名：テストメッセージテストメッセージテストメッセージ</a>
+                                            <span>本文：テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" value="1" >
+                                        <div class="user-img-name">
+                                            <img src="image/Vector.png" alt="ユーザー画像">
+                                            <span>ユーザー１</span>
+                                        </div>
+                                        <div class="message-title-text">
+                                            <a href="" class="message-title">件名：テストメッセージテストメッセージテストメッセージ</a>
+                                            <span>本文：テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" value="1" >
+                                        <div class="user-img-name">
+                                            <img src="image/Vector.png" alt="ユーザー画像">
+                                            <span>ユーザー１</span>
+                                        </div>
+                                        <div class="message-title-text">
+                                            <a href="" class="message-title">件名：テストメッセージテストメッセージテストメッセージ</a>
+                                            <span>本文：テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" value="1" >
+                                        <div class="user-img-name">
+                                            <img src="image/Vector.png" alt="ユーザー画像">
+                                            <span>ユーザー１</span>
+                                        </div>
+                                        <div class="message-title-text">
+                                            <a href="" class="message-title">件名：テストメッセージテストメッセージテストメッセージ</a>
+                                            <span>本文：テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/check-all.js"></script>
+
+</html>

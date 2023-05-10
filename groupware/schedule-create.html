@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GoogleFontsここから -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+    <!-- GoogleFontsここまで -->
+    <!-- FontAwsomeここから -->
+    <script src="https://kit.fontawesome.com/7ba2902154.js" crossorigin="anonymous"></script>
+    <!-- FontAwsomeここまで -->
+<!-- CSSここから -->
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/message.css">
+<link rel="stylesheet" href="css/schedule-create.css">
+<!-- CSSここまで -->
+</head>
+<body>
+    <div class="side-bar">
+        <nav>
+            <ul>
+                <li class="blue-square menu">Menu</li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="top.html" class="button" >
+                                トップ
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="schedule.html" class="button suke" >
+                                スケジュール
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="message.html" class="button" >
+                                メッセージ
+                        </a>
+                    </div>
+                </li>
+                <li>            
+                    <div class="button-shadow">
+                        <a href="board.html" class="button" >
+                                掲示板
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="notice.html" class="button" >
+                                通知
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="group.html" class="button" >
+                                グループ
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="option.html" class="button" >
+                                設定
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <p class="bottom">現在時刻12:32</p>
+    </div>
+    <div class="main-bar">
+        <div class="head-bar">
+            <ul>
+                <li>
+                    <a href="notice.html">
+                        <i class="fa-solid fa-bell"></i>通知
+                    </a>
+                </li>
+                <li><i class="fa-solid fa-user"></i>ようこそ○○さん</li>
+                <li>
+                    <form action="login.html">
+                        <button>
+                            ログアウト<i class="fa-solid fa-right-from-bracket"></i>
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Schedule<span>スケジュール</span></h1>
+            <div class="content-message">
+                <div class="blue-square white-border scroll-y massage-main-create">
+                    <form action="">
+                        <div class="message-create">
+                            <div class="schedule-create-period">
+                                <span>期間：</span>
+                                <div>
+                                    <div class="schedule-create-period-start">
+                                        <p>開始：</p>
+                                        <select name="year" id="schedule-start-year">
+                                            <option value="">--年--</option>
+                                            <option value="2023">2023</option>
+                                        </select>年
+                                        <select name="year" id="schedule-start-year">
+                                            <option value="">--月--</option>
+                                        </select>月
+                                        <select name="year" id="schedule-start-year">
+                                            <option value="">--日--</option>
+                                        </select>日
+                                        <select name="year" id="schedule-start-year">
+                                            <option value="">--時--</option>
+                                        </select>時
+                                        <select name="year" id="schedule-start-year">
+                                            <option value="">--分--</option>
+                                        </select>分
+                                    </div>
+                                    <div class="schedule-create-period-end">
+                                        <p>終了：</p>
+                                        <select name="year" id="schedule-start-year">
+                                            <option value="">--年--</option>
+                                            <option value="2023">2023</option>
+                                        </select>年
+                                        <select name="year" id="schedule-start-year">
+                                            <option value="">--月--</option>
+                                        </select>月
+                                        <select name="year" id="schedule-start-year">
+                                            <option value="">--日--</option>
+                                        </select>日
+                                        <select name="year" id="schedule-start-year">
+                                            <option value="">--時--</option>
+                                        </select>時
+                                        <select name="year" id="schedule-start-year">
+                                            <option value="">--分--</option>
+                                        </select>分
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="message-create-title">件名：<input type="text" name="message-title" placeholder="件名"></p>
+                            <p class="message-create-sender">製作者：ユーザー１</p>
+                            <p class="mesage-create-text">備考：<textarea></textarea></p>
+                            <p class="address-to">参加者</p>
+                            <div class="edit-address">
+                                <div>
+                                    <select id="group-members" class="group-members blue-square white-border" multiple></select>
+                                </div>
+                                <div>
+                                    <div class="button-shadow">
+                                        <button type="button" id="add-btn" class="button">追加</button>
+                                    </div>
+                                    <div class="button-shadow">
+                                            <button type="button" id="remove-btn" class="button">削除</button>
+                                    </div>
+                                </div>
+                                <div class="edit-address-memberlist">
+                                    <span>メンバーリスト</span>
+                                    <input type="text" id="search-input" placeholder="フィルタ">
+                                    <select id="member-list" class="blue-square white-border" multiple>
+                                        <option>ユーザー1</option>
+                                        <option>ユーザー2</option>
+                                        <option>ユーザー3</option>
+                                        <option>ユーザー4</option>
+                                        <option>ユーザー5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="submit-cancel">
+                                <button type="submit" class="blue-square">作成する</button>
+                                <a href="schedule.html" class="blue-square">キャンセル</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/group-create.js"></script>
+</html>

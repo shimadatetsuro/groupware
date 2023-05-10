@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GoogleFontsここから -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+    <!-- GoogleFontsここまで -->
+    <!-- FontAwsomeここから -->
+    <script src="https://kit.fontawesome.com/7ba2902154.js" crossorigin="anonymous"></script>
+    <!-- FontAwsomeここまで -->
+<!-- CSSここから -->
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/group.css">
+<!-- CSSここまで -->
+</head>
+<body>
+    <div class="side-bar">
+        <nav>
+            <ul>
+                <li class="blue-square menu">Menu</li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="top.html" class="button" >
+                                トップ
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="schedule.html" class="button suke" >
+                                スケジュール
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="message.html" class="button" >
+                                メッセージ
+                        </a>
+                    </div>
+                </li>
+                <li>            
+                    <div class="button-shadow">
+                        <a href="board.html" class="button" >
+                                掲示板
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="notice.html" class="button" >
+                                通知
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="#" class="button" >
+                                グループ
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-shadow">
+                        <a href="option.html" class="button" >
+                                設定
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <p class="bottom">現在時刻12:32</p>
+    </div>
+    <div class="main-bar">
+        <div class="head-bar">
+            <ul>
+                <li>
+                    <a href="notice.html">
+                        <i class="fa-solid fa-bell"></i>通知
+                    </a>
+                </li>
+                <li><i class="fa-solid fa-user"></i>ようこそ○○さん</li>
+                <li>
+                    <button>
+                        ログアウト<i class="fa-solid fa-right-from-bracket"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Group<span>グループ</span></h1>
+            <div class="content-group">
+                <div class="group-menu blue-square white-border">
+                    <ul>
+                        <li>
+                            <div class="button-shadow">
+                                <a href="group.html" class="button" >
+                                        グループ編集
+                                </a>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <div class="button-shadow">
+                                <a href="#" class="button" >
+                                        グループ作成
+                                </a>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="group-edit blue-square white-border">
+                    <div class="group-edit-member">
+                        <div class="flex column">
+                            <span>グループ名</span>
+                            <input type="text" id="group-name" placeholder="グループ名">
+                            <select id="group-members" class="group-members blue-square white-border" multiple></select>
+                        </div>
+                        <div class="group-edit-member-button">
+                            <div>
+                                <div class="button-shadow">
+                                    <button type="button" id="add-btn" class="button">追加</button>
+                                </div>
+                                <div class="button-shadow">
+                                        <button type="button" id="remove-btn" class="button">削除</button>
+                                </div>
+                            </div>
+                            <div class="button-shadow">
+                                <button type="button" id="add-btn" class="button">変更を保存</button>
+                            </div>
+                        </div>
+                        <div class="edit-group-memberlist">
+                            <span>メンバーリスト</span>
+                            <input type="text" id="search-input" placeholder="フィルタ">
+                            <select id="member-list" class="blue-square white-border" multiple>
+                                <option>ユーザー1</option>
+                                <option>ユーザー2</option>
+                                <option>ユーザー3</option>
+                                <option>ユーザー4</option>
+                                <option>ユーザー5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/group-create.js"></script>
+</html>

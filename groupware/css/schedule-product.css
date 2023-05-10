@@ -1,0 +1,8 @@
+@charset "UTF-8";
+.board-product-box {
+    box-sizing: content-box;
+    min-height: 400px;
+    height: 82%;
+    width: 92%;
+    min-width: 920px;
+}

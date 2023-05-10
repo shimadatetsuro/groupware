@@ -1,0 +1,14 @@
+@charset "UTF-8";
+.board-list {
+    min-height: 500px;
+    height: 80vh;
+}
+.board-thread .datetime {
+    width: 20%;
+}
+.notice-product {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

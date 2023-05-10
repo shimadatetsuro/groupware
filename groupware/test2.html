@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Group Creator</title>
+</head>
+<body>
+	<h1>Group Creator</h1>
+	
+	<div>
+		<h2>Member List</h2>
+		<input type="text" id="search-input" placeholder="Search...">
+		<select id="member-list" multiple>
+			<option>Member 1</option>
+			<option>Member 2</option>
+			<option>Member 3</option>
+			<option>Member 4</option>
+			<option>Member 5</option>
+		</select>
+	</div>
+	
+	<div>
+		<h2>Group Members</h2>
+		<select id="group-members" multiple></select>
+	</div>
+	
+	<div>
+		<button id="add-btn">Add</button>
+		<button id="remove-btn">Remove</button>
+	</div>
+	
+	<script src="js/group-create.js">
+		// const memberList = document.getElementById('member-list');
+		// const groupMembers = document.getElementById('group-members');
+		// const addBtn = document.getElementById('add-btn');
+		// const removeBtn = document.getElementById('remove-btn');
+		// const searchInput = document.getElementById('search-input');
+		
+		// let members = Array.from(memberList.options);
+		
+		// // メンバーリストを検索してフィルタリングする関数
+		// const filterMembers = (query) => {
+		// 	memberList.innerHTML = '';
+		// 	const filteredMembers = members.filter((member) => {
+		// 		return member.text.toLowerCase().includes(query.toLowerCase());
+		// 	});
+		// 	filteredMembers.forEach((member) => {
+		// 		memberList.add(member);
+		// 	});
+		// };
+		
+		// searchInput.addEventListener('input', () => {
+		// 	filterMembers(searchInput.value);
+		// });
+		
+		// addBtn.addEventListener('click', () => {
+		// 	const selectedMembers = Array.from(memberList.selectedOptions);
+		// 	selectedMembers.forEach((member) => {
+		// 		groupMembers.add(new Option(member.value, member.value));
+		// 	});
+		// });
+		
+		// removeBtn.addEventListener('click', () => {
+		// 	const selectedGroupMembers = Array.from(groupMembers.selectedOptions);
+		// 	selectedGroupMembers.forEach((member) => {
+		// 		groupMembers.remove(groupMembers.selectedIndex);
+		// 	});
+		// });
+	</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* スケジュール画面ここから */
+
+.content .schedule {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+.content .schedule .flex {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0 20px 0;
+}
+.content .schedule .flex .between {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.schedule a.blue-square {
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+}
+.schedule ul{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.schedule ul li{
+    margin-left: 1rem;
+}
+.schedule-table {
+    overflow-y: scroll;
+    min-height: 440px;
+    height: 73vh;
+}
+
+.schedule-table table{
+    width: 100%;
+    color: black;
+    border-collapse: separate;
+    border-spacing: 3px;
+}
+.schedule-table thead tr{
+    position: sticky;
+	top: 0;
+}
+.schedule-table thead tr :before{
+    content:"";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #23009C;
+    border-top: 0;
+    border-left: 0;
+  }
+.schedule-table th,
+.schedule-table td {
+    width: 12.5%;
+    background-color: #D9D9D9;
+}
+.schedule-table td {
+    height: 90px;
+}
+/* スケジュール画面ここまで */

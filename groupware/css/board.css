@@ -1,0 +1,25 @@
+@charset "UTF-8";
+.board-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.board-menu-createthread a{
+    padding: 0.5rem;
+}
+.board-list{
+    width: 98%;
+    min-height: 443px;
+    height: 74vh;
+}
+.board-thread{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.2rem;
+}

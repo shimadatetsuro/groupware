@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/* ここから受信ボックス */
+.content-message {
+        display: flex;
+}
+.message-menu{
+    min-width: 120px;
+    width: 10%;
+}
+.message-main {
+    width: 90%;
+    /* height: 500px; */
+}
+.message-command span {
+    margin-left: 10px;
+}
+.message-list {
+    padding: 10px 10px;
+    min-height: 407px;
+    height: 69vh;
+    overflow-y: scroll;
+}
+.message-list li {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #fff;
+}
+.message-list :last-child{
+    border-bottom: none;
+}
+.user-img-name{
+    display: flex;
+    flex-flow: column;
+    margin-right: 20px;
+}
+.user-img-name span {
+    margin-top: 10px;
+}
+.message-title-text {
+    display: flex;
+    flex-flow: column;
+}
+.message-title{
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+input[type=checkbox] {
+	transform: scale(1.5);
+    margin: 10px;
+}
+.message-title {
+    color: #fff;
+}
+/* ここまで受信ボックス */
+
+/* ここからメッセージ作成 */
+.massage-main-create{
+    width: 90%;
+    height: 440px;
+    padding: 30px;
+}
+.message-create {
+    display: flex;
+    flex-flow: column;
+}
+.message-create > * {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #fff;
+}
+.mesage-create-text{
+    display: flex;
+    justify-content: flex-start;
+}
+.mesage-create-text textarea {
+    width: 580px;
+    height: 200px;
+}
+.address-to {
+    border-bottom: none;
+}
+.edit-address{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.edit-address select {
+    width: 170px;
+    height: 180px;
+    font-size: 1rem;
+}
+select.group-members {
+    margin-top: 37px;
+}
+.edit-address-memberlist{
+    display: flex;
+    flex-flow: column;
+}
+.message-create .button {
+    width: 5rem;
+}
+.submit-cancel {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: none;
+}
+.submit-cancel a,
+.submit-cancel button {
+    margin: 0.3rem;
+    width: 8rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+}

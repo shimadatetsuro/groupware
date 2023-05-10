@@ -1,0 +1,265 @@
+@charset "UTF-8";
+body{
+    display: flex;
+    max-width: 1280px;
+    min-width: 1024px;
+    height: 99.5vh;
+    min-height: 600px;
+}
+/* サイドバーここから */
+.side-bar{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 12%;
+    max-width: 123px;
+    border: 3px solid #fff;
+}
+.menu{
+    font-size: 4rem;
+    width: 6rem;
+    margin: 1rem auto 2rem auto;
+    text-align: center;
+}
+.side-bar ul{
+    margin: 0 3px;
+    display: flex;
+    flex-flow: column;
+}
+.side-bar ul button.button{
+    margin: 0.4rem auto;
+}
+.suke {
+    font-size: 0.9rem;
+}
+p.bottom{
+margin-top: auto;
+text-align: center;
+}
+/* サイドバーここまで */
+
+/* ヘッダーとコンテンツバーの幅指定 */
+.main-bar{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+/* ヘッダーここから */
+.head-bar{
+    display:flex;
+align-items:center;
+justify-content: flex-end;
+    height: 4%;
+    border: 3px solid #fff;
+    border-left: 1.5px;
+}
+.head-bar ul{
+    display: flex;
+}
+.head-bar ul li{
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+.head-bar ul li button {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    outline: none;
+    border-width: 0;
+}
+.head-bar ul li button:hover,
+.head-bar a:hover {
+    color: red;
+    cursor: pointer;
+}
+.head-bar a {
+    color: #fff;
+    text-decoration: none;
+}
+/* ヘッダーここまで */
+/* メインコンテンツここから */
+.content{
+    height: 95%;
+    border: 3px solid #fff;
+    padding: 0 1rem;
+    border-top: 1.5px;
+    border-left: 1.5px;
+}
+.content-nav{
+    font-size: 1.5rem;
+    padding: 0.6rem 1.5rem;
+}
+/* トップ画面ここから */
+.datetime-title{
+    font-size: 1.3rem;
+    padding: 0.8rem 1.5rem;
+}
+.top-schedule{
+    height: 177px;
+    margin-top: 0.5rem;
+}
+.top-schedule ul{
+    display: flex;
+    justify-content: space-between;
+}
+.top-schedule ul li{
+    margin-left: 1rem;
+}
+/* .top-schedule ul li a{
+    text-decoration: none;
+} */
+.top-schedule div.flex{
+    justify-content: space-between;
+}
+.top-schedule table{
+    margin-top: 1rem;
+    width: 100%;
+    color: black;
+    border-collapse: separate;
+    border-spacing: 3px;
+    table-layout: fixed;
+    height: 120px;
+}
+.top-schedule th,
+.top-schedule td{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 105.25px;
+    width: 12.5%;
+    background-color: #D9D9D9;
+}
+.top-schedule td {
+    font-size: 0.9rem;
+    height: 90px;
+}
+.top-schedule td p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.schedule-table th {
+    vertical-align: middle;
+}
+
+.board-group-message {
+    height: 369px;
+    margin-top: 0.5rem;
+    display: flex;
+}
+.board-group {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.board-group .white-border {
+    width: 90%;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    padding: 0.5rem 1rem;
+}
+.board{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+.board .white-border{
+    width: 90%;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+.board .white-border ul {
+display: flex;
+flex-flow: column;
+justify-content: flex-start;
+}
+.board .white-border ul li{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.3rem;
+    border-bottom: solid 1px #fff;
+}
+.board .white-border ul li time{
+    white-space: nowrap;
+    margin-right: 30px;
+    margin-left: 10px;
+
+}
+.board .white-border ul li span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.board .white-border ul li span a{
+    color: #fff;
+    text-decoration: none;
+}
+.group {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+
+.group .white-border ul {
+    display: flex;
+    overflow: scroll hidden;
+    white-space:nowrap;
+}
+.group .white-border ul::-webkit-scrollbar {
+    width: 0;
+}
+.group .white-border ul li{
+    margin-left: 35px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+.group .white-border ul li .fa-circle-user{
+    font-size: 3rem;
+}
+.group .white-border ul li span{
+    margin-top: 5px;
+}
+.message{
+    width: 50%;
+}
+.message .white-border {
+margin-left: 0;
+}
+.message .white-border .fa-circle-user{
+    font-size: 3rem;
+}
+.message .white-border ul {
+    height: 310px;
+    padding: 0 20px;
+    overflow-y: auto; /* 必要なときだけ縦方向のスクロールバーを表示 */
+}
+.message .white-border ul li {
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px #fff;
+}
+.message .white-border ul :last-child {
+    border: none;
+}
+.message li .icon-name {
+margin-right: 1rem;
+}
+.icon-name {
+    width: 50px;
+    display: flex;
+    flex-flow: column;
+}
+.icon-name span {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.5rem;
+}
+/* トップ画面ここまで */
+
+
+/* メインコンテンツここまで */

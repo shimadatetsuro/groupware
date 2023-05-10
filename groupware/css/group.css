@@ -1,0 +1,33 @@
+@charset "UTF-8";
+.content-group{
+    display: flex;
+}
+.group-menu{
+    padding: 0.5rem;
+}
+.group-menu .button{
+    font-size: 0.8rem;
+}
+
+.group-edit-member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.edit-group-memberlist {
+    display: flex;
+    flex-flow: column;
+}
+.group-edit{
+    padding: 25px;
+}
+.group-edit-member select,
+.edit-group-memberlist select{
+    width: 216px;
+    height: 250px;
+}
+
+.group-edit-member-button{
+    display: flex;
+    flex-flow: column;
+}
